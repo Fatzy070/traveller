@@ -1,5 +1,5 @@
 import React from 'react';
-import Back from '../../data/back';
+import Back from '../../data/Back';
 import { FaMapMarkedAlt } from "react-icons/fa";
 import Form from './Form';
 
