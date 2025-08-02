@@ -63,7 +63,7 @@ const Footer = () => {
       ) : (
         <>
           {section.items?.map((item, i) => (
-            <p key={i} className='capitalize pt-1.5'>{item}</p>
+            <p key={i} className=' pt-1.5'>{item}</p>
           ))}
 
           {section.icons && (
