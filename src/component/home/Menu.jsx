@@ -19,8 +19,14 @@ const Menu = () => {
         <div onClick={toggleBar}>
             <AlignJustify size="25px" color='blue' />
         </div>
-       { showBar && (
-         <div className='  bg-blue-300 h-[100dvh] w-[70%] text-[rgba(9,57,100,255)] absolute right-0 top-0'>
+    
+         { showBar && (
+        <>
+        <div
+            onClick={toggleBar}
+            className="fixed top-0 left-0 w-full h-full bg-black/30 backdrop-blur-sm z-40"
+          ></div>
+         <div className=' z-50 bg-white h-[100dvh] w-[70%] text-[rgba(9,57,100,255)] absolute right-0 top-0'>
                <div className='border-gray-300 px-[20px] pb-2 border-b-2 border-t-2 h-[70px] flex items-center justify-between'>
                  <h3 className=' menu text-[1.3rem]  '>Menu</h3>
                 <div onClick={toggleBar} className='text-[20px] '>
@@ -43,7 +49,9 @@ const Menu = () => {
             </div>
             <p className='flex absolute bottom-0 home pb-[10px] px-[20px] items-end '>Version: 1.0 </p>
         </div>
+        </>
        )}
+ 
         </>
     );
 };

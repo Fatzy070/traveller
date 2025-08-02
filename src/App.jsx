@@ -11,7 +11,7 @@ import Faq from './component/FAQs/Faq';
 import Aboutpage from './pages/about.jsx/Aboutpage';
 import Faqpage from './pages/faqs/Faqpage';
 import Page from './pages/services/Page';
-import Contactpage from './pages/contact.jsx/Contactpage';
+import Contactpage from './pages/contact/Contactpage';
 
 
 
