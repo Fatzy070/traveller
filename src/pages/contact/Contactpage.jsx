@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../ui/Header';
-import Page from './page';
+import Page from '../contact/Page';
 const Contactpage = () => {
     return (
         <div>
