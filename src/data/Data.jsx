@@ -6,7 +6,7 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 const Data = {
     smail:[
-        {id: 1 , name:'smoothflight@gmail.com' , icon: faEnvelope },
+        {id: 1 , name:'YouthVenture@gmail.com' , icon: faEnvelope },
         {id: 2 , name:'+01234567890' , icon: faPhone },
     ],
     icons:[

@@ -62,7 +62,7 @@ const Navbar = () => {
        <section className="flex bg-[rgba(245,245,245,255)] md:bg-white items- h-[70px] md:h-[85px] justify-between  py-[1.2rem] px-[10px] md:px-[10px] lg:px-[3.5rem] md:py-[1rem]">
             <div className="flex items-center md:items-start">
                 <img src={Aero} alt="" className=" w-[65px] h-[47px]"/>
-                <h1 className="relative text-[1.7rem]   md:text-[2.3rem] md:top-[-11px] smooth">Smoothflight</h1>
+                <h1 className="relative text-[1.7rem]   md:text-[2.3rem] md:top-[-11px] smooth">YouthVenture</h1>
             </div>
             <div className="hidden md:flex   md:gap-[10px] lg:gap-[2rem]">
                 <div className="flex md:gap-[11px] lg:gap-[30px]">
