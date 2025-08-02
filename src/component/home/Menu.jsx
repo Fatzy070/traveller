@@ -5,10 +5,26 @@ import { faXmark} from '@fortawesome/free-solid-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { AlignJustify , } from 'lucide-react';
 import { useState } from 'react';
-import { Link }  from 'react-router-dom'
+import { Link  , useNavigate}  from 'react-router-dom'
+import Loading from '../../ui/Loading';
+
+
 const Menu = () => {
     const { home  } = Data
     const [showBar , setShowBar ] = useState(false)
+     const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
+
+   const handleNavClick = (path) => {
+    setIsLoading(true);
+
+    // simulate small delay or wait for next render
+    setTimeout(() => {
+      navigate(path);
+      setIsLoading(false);
+    }, 800); // small delay for effect
+  };
+  
 
     const toggleBar = () => {
         setShowBar(!showBar)
@@ -19,7 +35,7 @@ const Menu = () => {
         <div onClick={toggleBar}>
             <AlignJustify size="25px" color='blue' />
         </div>
-    
+      {isLoading && <Loading />}
          { showBar && (
         <>
         <div
@@ -36,7 +52,9 @@ const Menu = () => {
              <div>
             <ul className="px-[20px] mt-[10px]">
               {home.map((item, index) => (
-                <li key={index} className="py-[10px] home">
+                <li key={index} className="py-[10px] home" 
+                onClick={() => handleNavClick(item.path)}
+                >
                   <Link to={item.path} onClick={toggleBar}>
                     {item.name}
                   </Link>
