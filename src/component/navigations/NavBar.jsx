@@ -59,7 +59,7 @@ const Navbar = () => {
                 })}
             </div>
        </section>
-       <section className="flex bg-[rgba(245,245,245,255)] md:bg-white items- h-[70px] md:h-[85px] justify-between  py-[1.2rem] px-[10px] md:px-[10px] lg:px-[3.5rem] md:py-[1rem]">
+       <section className="flex bg-[rgba(245,245,245,255)] md:bg-white items- h-[70px] md:h-[85px] justify-between  py-[1.2rem]  px-[10px] md:px-[10px] lg:px-[3.5rem] md:py-[1rem]">
             <div className="flex items-center md:items-start">
                 <img src={Aero} alt="" className=" w-[65px] h-[47px]"/>
                 <h1 className="relative text-[1.7rem]   md:text-[2.3rem] md:top-[-11px] smooth">YouthVenture</h1>
@@ -85,7 +85,7 @@ const Navbar = () => {
                 <p><a href="#">get a quote</a></p>
             </div>
             </div>
-            <div className="border-[3px] z-50 border-blue-800 h-[30px] px-[1px] rounded-[5px] md:hidden">
+            <div className="border-[3px]  z-50 border-blue-800 h-[30px] px-[1px] rounded-[5px] md:hidden">
                 <Menu />
             </div>
             
